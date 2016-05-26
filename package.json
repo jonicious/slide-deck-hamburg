@@ -1,5 +1,5 @@
 {
-  "name": "web-boiletplate",
+  "name": "slide-deck-css-classes",
   "description": "Slide Deck CSSclasses",
   "author": "Jonas Reitmann",
   "contributors": [
@@ -10,10 +10,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/CSSclasses/CSSclasses-Hamburg"
+    "url": "https://github.com/CSSclasses/slide-deck-hamburg"
   },
   "scripts": {
-    "start": "gulp serve"
     "start": "gulp serve",
     "deploy": "gulp deploy"
   },
@@ -25,7 +24,7 @@
     "browser-sync": "2.11.1",
     "gulp-sass": "2.2.0",
     "gulp-autoprefixer": "3.1.0",
-    "gulp-notify": "2.2.0"
-    "gulp-gh-pages": "^0.5.4",
+    "gulp-notify": "2.2.0",
+    "gulp-gh-pages": "^0.5.4"
   }
 }
