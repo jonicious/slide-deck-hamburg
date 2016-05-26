@@ -4,6 +4,8 @@ var reload = browserSync.reload;
 var sass = require("gulp-sass");
 var autoprefixer = require("gulp-autoprefixer");
 var notify = require("gulp-notify");
+var ghPages = require('gulp-gh-pages');
+
 
 /*
  * Opens a webserver (usually localhost:3000) and runs the site.
@@ -57,6 +59,11 @@ gulp.task('serve', ['build'], function() {
     });
 
     gulp.watch(['./*.html', './scss/*.scss', './assets/*'], ['scss', 'copy']);
+});
+
+gulp.task('deploy', ['build'], function() {
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages());
 });
 
 gulp.task('copy', ['copy-assets', 'copy-html', 'copy-reveal']);

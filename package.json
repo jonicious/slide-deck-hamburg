@@ -14,6 +14,8 @@
   },
   "scripts": {
     "start": "gulp serve"
+    "start": "gulp serve",
+    "deploy": "gulp deploy"
   },
   "bugs": {
     "url": "https://github.com/CSSclasses/CSSclasses-Hamburg/issues"
@@ -24,5 +26,6 @@
     "gulp-sass": "2.2.0",
     "gulp-autoprefixer": "3.1.0",
     "gulp-notify": "2.2.0"
+    "gulp-gh-pages": "^0.5.4",
   }
 }
