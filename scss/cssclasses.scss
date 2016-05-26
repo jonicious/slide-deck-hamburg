@@ -6,8 +6,8 @@
 
 
 // Default mixins and settings -----------------
-@import "../template/mixins";
-@import "../template/settings";
+@import "../reveal/css/theme/template/mixins";
+@import "../reveal/css/theme/template/settings";
 // ---------------------------------------------
 
 
@@ -44,7 +44,28 @@ section.has-dark-background {
 	}
 }
 
-.cssclasses-logo {
+.horizontal-list {
+	padding: 0;
+
+	&__item {
+		display: inline;
+		margin-right: 5% !important;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		img {
+			width: 29%;
+			height: auto;
+			margin: 0 !important;
+		}
+
+	}
+
+}
+
+.img--no-border-shadow {
 	border: 0 !important;
 	box-shadow: none !important;
 	background: none !important;
@@ -58,5 +79,5 @@ section.has-dark-background {
 }
 
 // Theme template ------------------------------
-@import "../template/theme";
+@import "../reveal/css/theme/template/theme";
 // ---------------------------------------------
