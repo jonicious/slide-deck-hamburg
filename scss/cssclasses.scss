@@ -46,18 +46,21 @@ section.has-dark-background {
 
 .horizontal-list {
 	padding: 0;
+	display: flex !important;
+	clear: both !important;
+	float: none !important;
 
 	&__item {
 		display: inline;
 		margin-right: 5% !important;
 
 		&:last-child {
-			margin-right: 0;
+			margin-right: 0 !important;
 		}
 
 		img {
-			width: 29%;
-			height: auto;
+			width: auto;
+			height: 34px;
 			margin: 0 !important;
 		}
 
@@ -76,6 +79,22 @@ section.has-dark-background {
 		padding: .5em !important;
 		font-size: 85%;
 	}
+}
+
+.section--left {
+	margin-left: -70px !important;
+	width: 60%;
+	float: left;
+}
+
+.section--right {
+	margin-left: 20px !important;
+	width: 35%;
+	float: left;
+}
+
+.screen-saver .horizontal-list {
+	padding-top: 60px !important;
 }
 
 // Theme template ------------------------------
