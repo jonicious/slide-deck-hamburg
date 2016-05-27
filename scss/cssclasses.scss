@@ -68,6 +68,23 @@ section.has-dark-background {
 
 }
 
+.vertical-list {
+	clear: both;
+	list-style: none !important;
+	float: left;
+	width: 100% !important;
+
+	&__item {
+
+		img {
+			display: block;
+			margin: 40px auto !important;
+			width: 300px;
+		}
+
+	}
+}
+
 .img--no-border-shadow {
 	border: 0 !important;
 	box-shadow: none !important;
