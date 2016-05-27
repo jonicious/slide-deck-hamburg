@@ -9,15 +9,19 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   color: #fff; }
 
 .horizontal-list {
-  padding: 0; }
+  padding: 0;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  clear: both !important;
+  float: none !important; }
   .horizontal-list__item {
     display: inline;
     margin-right: 5% !important; }
     .horizontal-list__item:last-child {
-      margin-right: 0; }
+      margin-right: 0 !important; }
     .horizontal-list__item img {
-      width: 29%;
-      height: auto;
+      width: auto;
+      height: 34px;
       margin: 0 !important; }
 
 .img--no-border-shadow {
@@ -28,6 +32,19 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .schedule td {
   padding: .5em !important;
   font-size: 85%; }
+
+.section--left {
+  margin-left: -70px !important;
+  width: 60%;
+  float: left; }
+
+.section--right {
+  margin-left: 20px !important;
+  width: 35%;
+  float: left; }
+
+.screen-saver .horizontal-list {
+  padding-top: 60px !important; }
 
 /*********************************************
  * GLOBAL STYLES
