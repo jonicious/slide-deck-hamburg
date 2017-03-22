@@ -56,6 +56,28 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .screen-saver .horizontal-list {
   padding-top: 60px !important; }
 
+.highlight {
+  color: white;
+  position: relative; }
+  .highlight:before {
+    background-color: #d33131;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: -1%;
+    left: -3%;
+    width: 107%;
+    height: 104%;
+    transform: rotate(2deg);
+    z-index: -1;
+    border-radius: 2px; }
+
+.highlight-1:before {
+  transform: rotate(-1deg); }
+
+.highlight-2:before {
+  transform: rotate(1deg); }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -93,7 +115,7 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  margin: 0 0 20px 0;
+  margin: 0 0 1em;
   color: #222;
   font-family: "Lato", Helvetica, sans-serif;
   font-weight: 400;
