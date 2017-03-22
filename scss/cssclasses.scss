@@ -29,6 +29,7 @@ $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
 $headingFontWeight: 400;
+$headingMargin: 0 0 1em;
 $linkColor: #d33131;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
@@ -112,6 +113,31 @@ section.has-dark-background {
 
 .screen-saver .horizontal-list {
 	padding-top: 60px !important;
+}
+
+.highlight {
+	color: white;
+	position: relative;
+	&:before {
+		background-color: $linkColor;
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: -1%;
+		left: -3%;
+		width: 107%;
+		height: 104%;
+		transform: rotate(2deg);
+		z-index: -1;
+		border-radius: 2px;
+	}
+}
+.highlight-1:before {
+	transform: rotate(-1deg);
+}
+
+.highlight-2:before {
+	transform: rotate(1deg);
 }
 
 // Theme template ------------------------------

@@ -7,7 +7,7 @@
 
 ## How to deploy it
 
-We use Github Pages for this site: http://cssclasses.github.io/slide-deck-hamburg/
+We use Github Pages for this site: http://herrbertling.github.io/slide-deck-hamburg/
 
 * `npm install`
 * `gulp deploy`
