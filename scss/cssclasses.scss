@@ -117,6 +117,7 @@ section.has-dark-background {
 
 .highlight {
 	color: white;
+	font-weight: normal;
 	position: relative;
 	&:before {
 		background-color: $linkColor;
